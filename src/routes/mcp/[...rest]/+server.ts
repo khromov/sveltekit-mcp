@@ -23,7 +23,7 @@ const handler = createMcpHandler(
 		maxDuration: 5,
 		basePath: '/mcp',
 		verboseLogs: true,
-		redisUrl: env.REDIS_URL ? env.REDIS_URL : 'redis://localhost:6379'
+		redisUrl: env.REDIS_URL ? env.REDIS_URL : 'redis://127.0.0.1:6379'
 	}
 );
 
