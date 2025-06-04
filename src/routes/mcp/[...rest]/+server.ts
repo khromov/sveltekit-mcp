@@ -27,7 +27,6 @@ const handler = createMcpHandler(
 );
 
 export const GET: RequestHandler = async ({ request }) => {
-	console.log('GET request received');
 	return handler(request);
 };
 

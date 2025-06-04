@@ -18,3 +18,8 @@ npx @modelcontextprotocol/inspector
 ```
 
 http://127.0.0.1:6274/
+
+### Urls
+
+- SSE http://localhost:5173/mcp/sse
+- Streamable http://localhost:5173/mcp/mcp
