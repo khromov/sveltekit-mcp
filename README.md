@@ -15,7 +15,7 @@ http://localhost:5173
 ## Debug MCP
 
 ```
-npx @modelcontextprotocol/inspector
+NODE_TLS_REJECT_UNAUTHORIZED=0 NODE_OPTIONS="--insecure-http-parser" npx @modelcontextprotocol/inspector
 ```
 
 http://127.0.0.1:6274/
