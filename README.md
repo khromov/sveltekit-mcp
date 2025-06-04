@@ -7,6 +7,7 @@ A basic example of using SvelteKit with an MCP, based on [this starter](https://
 ```bash
 nvm i && nvm use
 npm run dev
+docker compose up
 ```
 
 http://localhost:5173
