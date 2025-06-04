@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import type { RequestHandler } from './$types';
 import { createMcpHandler } from '@vercel/mcp-adapter';
+import { env } from '$env/dynamic/private';
 
 const handler = createMcpHandler(
 	(server) => {
@@ -22,7 +23,7 @@ const handler = createMcpHandler(
 		maxDuration: 5,
 		basePath: '/mcp',
 		verboseLogs: true,
-		redisUrl: 'redis://localhost:6379'
+		redisUrl: env.REDIS_URL ? env.REDIS_URL : 'redis://localhost:6379'
 	}
 );
 
